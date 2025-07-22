@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Suspense } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -15,31 +14,7 @@ import Haidar from "../images/Haidar.jpg";
 import ContactSection from "../components/ContactSection";
 import { AboutText } from "../components/AboutText";
 import RotatingText from "../components/RotatingText";
-import DevIcons from "../components/DevIcons";
-import Tech from "../components/Tech";
 
-const blogPosts: { title: string; slug: string; date: string }[] = [
-  {
-    title: "I Just Read User Friendly by Cliff Kuang and Robert Fabricant",
-    slug: "just-read-user-friendly",
-    date: " June 8, 2024",
-  },
-  {
-    title: "Please Do an Accessibility Audit of Your Website",
-    slug: "please-do-an-accessibility-audit",
-    date: " April 27, 2024",
-  },
-  {
-    title: "Why I Don't Want to Work Remotely Early in My Career",
-    slug: "no-remote-early-in-my-career",
-    date: " January 3, 2024",
-  },
-  {
-    title: "Falling Out of Love with Twin Macro",
-    slug: "falling-out-of-love-with-twin-macro",
-    date: "December 29, 2023",
-  },
-];
 
 export default function Homepage() {
   return (
@@ -56,7 +31,7 @@ export default function Homepage() {
             <div className={styles.cta}>
               <h1 className={commonStyles.hiddenText}>Haidar Ahmad</h1>
               <h2 id="title" className={styles.title}>
-                I'am
+                I&apos;am
                 <RotatingText
                   texts={[
                     "Full-stack ",

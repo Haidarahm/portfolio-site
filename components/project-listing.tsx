@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { getImageProps } from "next/image";
 
 import styles from "../styles/project-listing.module.scss";

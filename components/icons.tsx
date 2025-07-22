@@ -9,7 +9,6 @@ import { SiSocketdotio } from "react-icons/si";
 import { SiExpress } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
 import { SiDaisyui } from "react-icons/si";
-import { CustomBoxIcon } from "./CustomBoxIcon"; // adjust path as needed
 import { SiI18Next } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { SiStyledcomponents } from "react-icons/si";
@@ -29,12 +28,11 @@ const techIconMap: Record<string, IconType> = {
   express: SiExpress,
   shadcn: SiShadcnui,
   daisyui: SiDaisyui,
-  gsap: CustomBoxIcon,
   i18: SiI18Next,
   motion: TbBrandFramerMotion,
   styled: SiStyledcomponents,
-  router:SiReactrouter,
-  threejs:TbBrandThreejs
+  router: SiReactrouter,
+  threejs: TbBrandThreejs,
 };
 
 export const TechIcons: FC<{ techs: string[] }> = ({ techs }) => (

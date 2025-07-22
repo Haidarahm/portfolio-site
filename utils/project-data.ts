@@ -30,7 +30,7 @@ export const projectsList: ProjectType[] = [
     link: "https://963sy.net",
     slug: "Syrian Tourism Site",
     type: "Frontend",
-    tech: ["vite", "react","router", "antd","gsap","styled","motion","i18"],
+    tech: ["vite", "react","router", "antd","styled","motion","i18"],
   },
   {
     name: "chat-system",
@@ -51,7 +51,7 @@ export const projectsList: ProjectType[] = [
     code:"https://github.com/Haidarahm/iphone",
     slug: "iphone",
     type: "frontend",
-    tech: ["react", "threejs", "gsap","tailwindcss"],
+    tech: ["react", "threejs","tailwindcss"],
   },
   {
     name: "Fashion website",
@@ -62,7 +62,7 @@ export const projectsList: ProjectType[] = [
     code:"https://github.com/Haidarahm/fashion-website",
     slug: "fashion-sebsite",
     type: "frontend",
-    tech: ["react","gsap","styled","motion"],
+    tech: ["react","styled","motion"],
   },
   {
     name: "Fizzi Soda website",
@@ -73,7 +73,7 @@ export const projectsList: ProjectType[] = [
     code:"https://github.com/Haidarahm/Fezzi-3D-Website",
     slug: "Fizzi Soda website",
     type: "frontend",
-    tech: ["react","gsap","nextjs","motion"],
+    tech: ["react","nextjs","motion"],
   },
   {
     name: "Game trailer website",

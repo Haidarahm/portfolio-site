@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 import { useEffect, useRef } from "react";
 import { motion, stagger, useAnimate } from "framer-motion"; // Changed from "motion/react" to "framer-motion"
@@ -16,7 +17,7 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   const componentRef = useRef(null);
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
 
   useEffect(() => {
     const observer = new IntersectionObserver(

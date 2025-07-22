@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { cn } from "../../lib/utils";
 import { AnimatePresence, motion } from "framer-motion"; // Changed from 'motion/react' to 'framer-motion'

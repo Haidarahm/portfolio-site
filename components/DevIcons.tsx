@@ -17,6 +17,7 @@ import {
   SiNodedotjs
 } from 'react-icons/si';
 import styles from './DevIcons.module.scss';
+import { JSX } from 'react/jsx-runtime';
 
 const RoundedIcon = ({ icon, name, position }: { 
   icon: JSX.Element, 
