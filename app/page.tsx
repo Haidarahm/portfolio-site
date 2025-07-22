@@ -13,6 +13,10 @@ import { projectsList } from "../utils/project-data";
 import ProjectListing from "../components/project-listing";
 import Haidar from "../images/Haidar.jpg";
 import ContactSection from "../components/ContactSection";
+import { AboutText } from "../components/AboutText";
+import RotatingText from "../components/RotatingText";
+import DevIcons from "../components/DevIcons";
+import Tech from "../components/Tech";
 
 const blogPosts: { title: string; slug: string; date: string }[] = [
   {
@@ -52,9 +56,25 @@ export default function Homepage() {
             <div className={styles.cta}>
               <h1 className={commonStyles.hiddenText}>Haidar Ahmad</h1>
               <h2 id="title" className={styles.title}>
-                I create
-                <span className={commonStyles.playful}> playful </span>{" "}
-                experiences.
+                I'am
+                <RotatingText
+                  texts={[
+                    "Full-stack ",
+                    "Mern-stack ",
+                    "Frontend ",
+                    "Backend ",
+                  ]}
+                  mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                  staggerFrom={"last"}
+                  initial={{ y: "100%" }}
+                  animate={{ y: 0 }}
+                  exit={{ y: "-120%" }}
+                  staggerDuration={0.025}
+                  splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
+                  transition={{ type: "spring", damping: 30, stiffness: 400 }}
+                  rotationInterval={2000}
+                />
+                Developer
               </h2>
               <div id="portraitContainer" className={styles.portraitContainer}>
                 <Image
@@ -81,40 +101,12 @@ export default function Homepage() {
 
           <section id="aboutContainer" className={styles.aboutContainer}>
             <h2>About Me</h2>
-            <p>
-              I'm Haidar Ahmad, a full-stack developer with a strong focus on
-              building scalable and efficient web applications. I specialize in
-              modern JavaScript frameworks and technologies, including React,
-              Next.js, Node.js, MongoDB, and MySQL.
-              <br></br> With experience across both frontend and backend
-              development, I bring a problem-solving mindset and a passion for
-              clean, maintainable code to every project. Whether it's developing
-              user-friendly interfaces or designing robust server-side
-              architectures, I aim to deliver high-quality solutions that drive
-              real impact.
-            </p>
-          </section>
-          <section
-            id="blogPreviewContainer"
-            className={styles.blogPreviewContainer}
-          >
-            <h2>My Blog</h2>
-            <ul>
-              {blogPosts.map((post, i) => (
-                <li key={i}>
-                  <Link href={`/blog/post/${post.slug}`}>
-                    <h3>{post.title}</h3>
-                    <p>{post.date}</p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <AboutText />
           </section>
           <section className={styles.projectContainer} id="projects">
             <div className={styles.projectTitleContainer}>
               <h2>My Projects</h2>
             </div>
-
             <div className={styles.projectListingsContainer}>
               {projectsList.map((project) => (
                 <ProjectListing key={project.slug} project={project} />
@@ -130,10 +122,10 @@ export default function Homepage() {
           <ul id="footerLinks" className={styles.footerLinks}>
             <li>
               <a
-                href="https://github.com/agrattan0820"
+                href="https://github.com/Haidarahm"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Go to Alexander's GitHub"
+                title="Go to Haidar's GitHub"
               >
                 GitHub
                 <FaGithub />
@@ -141,10 +133,10 @@ export default function Homepage() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/alexander-grattan/"
+                href="www.linkedin.com/in/haidar-ahmad-8bb40329a"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Connect with Alexander on LinkedIn"
+                title="Connect with Haidar on LinkedIn"
               >
                 LinkedIn
                 <FaLinkedin />

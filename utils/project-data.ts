@@ -5,6 +5,7 @@ import chat from "../images/chat.webp"
 import fashion from "../images/Wibe-Home-Desktop.webp";
 import soda from "../images/soda.png"
 import iphone from "../images/iphone.webp"
+import games from "../images/games.png"
 export type ProjectType = {
   name: string;
   description: string;
@@ -73,5 +74,16 @@ export const projectsList: ProjectType[] = [
     slug: "Fizzi Soda website",
     type: "frontend",
     tech: ["react","gsap","nextjs","motion"],
+  },
+  {
+    name: "Game trailer website",
+    description:
+      "A React web app for showcasing game trailers with interactive 3D and multimedia features. using (React, motion, threejs, tailwindcss)",
+    image: games,
+    link: "https://haidarahm.github.io/games-trailer-website/",
+    code:"https://github.com/Haidarahm/games-trailer",
+    slug: "Game Trailer website",
+    type: "frontend",
+    tech: ["react","motion","threejs","tailwindcss"],
   },
 ];

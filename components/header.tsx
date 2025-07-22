@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaMusic } from "react-icons/fa";
 
 import styles from "../styles/header.module.scss";
@@ -35,8 +35,19 @@ export default function Header({ logoLink }: HeaderProps) {
           <ul className={styles.navList}>
             <li>
               <a
-                href="https://github.com/agrattan0820"
-                title="Go to Alexander's GitHub"
+                href="https://wa.me/963982593034"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Chat with me on WhatsApp"
+              >
+                Whatsapp
+                <FaWhatsapp />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Haidarahm"
+                title="Go to Haidar's GitHub"
               >
                 GitHub
                 <FaGithub />
@@ -44,8 +55,8 @@ export default function Header({ logoLink }: HeaderProps) {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/in/alexander-grattan/"
-                title="Connect with Alexander on LinkedIn"
+                href="www.linkedin.com/in/haidar-ahmad-8bb40329a"
+                title="Connect with Haidar on LinkedIn"
               >
                 LinkedIn
                 <FaLinkedin />

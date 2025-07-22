@@ -1,4 +1,3 @@
-# Alexander Grattan Portfolio Site
 
 Showcases my work and the experience I have in web development.
 
