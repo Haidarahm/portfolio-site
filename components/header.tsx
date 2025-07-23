@@ -41,7 +41,8 @@ export default function Header({ logoLink }: HeaderProps) {
                 rel="noopener noreferrer"
                 title="Chat with me on WhatsApp"
               >
-                Whatsapp
+                <p>Whatsapp</p>
+
                 <FaWhatsapp />
               </a>
             </li>
@@ -50,7 +51,7 @@ export default function Header({ logoLink }: HeaderProps) {
                 href="https://github.com/Haidarahm"
                 title="Go to Haidar's GitHub"
               >
-                GitHub
+                <p>GitHub</p>
                 <FaGithub />
               </a>
             </li>
@@ -59,7 +60,7 @@ export default function Header({ logoLink }: HeaderProps) {
                 href="www.linkedin.com/in/haidar-ahmad-8bb40329a"
                 title="Connect with Haidar on LinkedIn"
               >
-                LinkedIn
+                <p>Linkedin</p>
                 <FaLinkedin />
               </a>
             </li>
@@ -69,7 +70,6 @@ export default function Header({ logoLink }: HeaderProps) {
                 title="Toggle Music"
                 style={{ cursor: "pointer" }}
               >
-                Music
                 <audio ref={audioRef} loop preload="auto">
                   <source src="/suzume.mp3" type="audio/mp3" />
                 </audio>

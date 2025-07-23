@@ -35,7 +35,12 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-
+    p{
+      display: none;
+        @media (min-width: 768px) {
+    display: block;
+  }
+    }
     li {
       a {
         display: flex;
