@@ -282,14 +282,21 @@
       }
     }
   }
+  .contactContainer{
+    position: relative;
+  }
 
   footer {
-    min-height: 100dvh;
+   height: 400px;
+   padding: 30px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     font-family: $font;
+    //  @media (min-width: 768px) {
+    //       display: flex;
+    //     }
     h2 {
       color: $white;
       font-size: 2.5rem;

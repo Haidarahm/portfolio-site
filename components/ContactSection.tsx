@@ -39,7 +39,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className={styles.contactSection}>
+    <div className={styles.contactSection}>
       {/* Left Section - Contact Form */}
       <div className={styles.formContainer}>
         <h2>Contact Me</h2>
@@ -108,6 +108,6 @@ export default function ContactSection() {
           <GlobeDemo />
         </div>
       </div>
-    </section>
+    </div>
   );
 }

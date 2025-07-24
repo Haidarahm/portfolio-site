@@ -57,8 +57,9 @@ export default function Header({ logoLink }: HeaderProps) {
             </li>
             <li>
               <a
-                href="www.linkedin.com/in/haidar-ahmad-8bb40329a"
+                href="https://www.linkedin.com/in/haidar-ahmad-8bb40329a/"
                 title="Connect with Haidar on LinkedIn"
+                 target="_blank"
               >
                 <p>Linkedin</p>
                 <FaLinkedin />

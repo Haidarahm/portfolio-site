@@ -15,7 +15,6 @@ import ContactSection from "../components/ContactSection";
 import { AboutText } from "../components/AboutText";
 import RotatingText from "../components/RotatingText";
 
-
 export default function Homepage() {
   return (
     <div className={styles.homeContainer}>
@@ -64,7 +63,8 @@ export default function Homepage() {
               Haidar Ahmad / Full-stack Developer
             </p>
             <a
-              href="https://drive.google.com/file/d/1j8A76DuHoCVg7JaL0Jn8kIRZC53EHgzf/view?usp=sharing"
+            href="/Haidar-portfolio.pdf"
+              // href="https://drive.google.com/file/d/1j8A76DuHoCVg7JaL0Jn8kIRZC53EHgzf/view?usp=sharing"
               className={styles.resumeButton}
               download
               target="_blank"
@@ -88,10 +88,9 @@ export default function Homepage() {
               ))}
             </div>
           </section>
-          <section className={styles.projectContainer} id="projects">
+          <section className={styles.contactContainer} id="projects">
             <ContactSection />
           </section>
-        </main>
         <footer>
           <h2>Connect with Me</h2>
           <ul id="footerLinks" className={styles.footerLinks}>
@@ -108,7 +107,7 @@ export default function Homepage() {
             </li>
             <li>
               <a
-                href="www.linkedin.com/in/haidar-ahmad-8bb40329a"
+                href="https://www.linkedin.com/in/haidar-ahmad-8bb40329a/"
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Connect with Haidar on LinkedIn"
@@ -119,6 +118,7 @@ export default function Homepage() {
             </li>
           </ul>
         </footer>
+        </main>
       </div>
     </div>
   );
